@@ -7,7 +7,6 @@ class AppConstants {
   static const String player2Win = "Jogador 02 Ganhou!!";
   static const String novoJogo = "Clique em recomeçar para jogar novamente.";
   static const String sair = "Sair";
-  static const String facil = "Fácil";
-  static const String medio = "Médio";
-  static const String dificil = "Difícil";
+  static const String singlePlayer = "Sozinho";
+  static const String multiPlayer = "Com Amigo";
 }

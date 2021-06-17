@@ -19,7 +19,7 @@ class PlayGameButton extends StatelessWidget {
         );
       },
       child: Padding(
-        padding: EdgeInsets.only(left: 40, right: 40, bottom: 20),
+        padding: EdgeInsets.only(left: 40, right: 40, bottom: 40),
         child: ClipRRect(
           borderRadius: BorderRadius.circular(20),
           child: Container(

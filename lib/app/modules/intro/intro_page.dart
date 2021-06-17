@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:tic_tac_toe/app/core/app_colors.dart';
 import 'package:tic_tac_toe/app/core/app_constants.dart';
 import 'package:tic_tac_toe/app/core/app_fonts.dart';
+import 'package:tic_tac_toe/app/modules/home/hard_home_page.dart';
 import 'package:tic_tac_toe/app/modules/home/home_page.dart';
 import 'package:tic_tac_toe/app/widgets/play_game_button.dart';
 
@@ -63,21 +64,15 @@ class _IntroPageState extends State<IntroPage>
               ),
             ),
             PlayGameButton(
-              buttonName: AppConstants.jogar + " " + AppConstants.facil,
+              buttonName: AppConstants.jogar + " " + AppConstants.singlePlayer,
               pushDificultyGame: () => MaterialPageRoute(
                 builder: (context) => HomePage(),
               ),
             ),
             PlayGameButton(
-              buttonName: AppConstants.jogar + " " + AppConstants.medio,
+              buttonName: AppConstants.jogar + " " + AppConstants.multiPlayer,
               pushDificultyGame: () => MaterialPageRoute(
-                builder: (context) => HomePage(),
-              ),
-            ),
-            PlayGameButton(
-              buttonName: AppConstants.jogar + " " + AppConstants.dificil,
-              pushDificultyGame: () => MaterialPageRoute(
-                builder: (context) => HomePage(),
+                builder: (context) => HardHomePage(),
               ),
             ),
           ],
